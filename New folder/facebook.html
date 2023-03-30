@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Header and Side Navigation Bar</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment facebook</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(241, 244, 255);
+      }
+      #head {
+        background-color: rgb(1, 81, 134);
+
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #logo {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      #head li {
+        list-style-type: none;
+        float: left;
+        margin-right: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+      #head form a {
+        text-decoration: none;
+        color: rgb(216, 237, 255);
+      }
+      #head form li input[type="submit"] {
+        background-color: rgb(2, 112, 155);
+        color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(0, 22, 146);
+        padding: 2px 5px 2px 5px;
+      }
+      #head form li input[type="password"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #head form li input[type="text"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #head form li input[type="submit"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        padding: 0 20px 0 20px;
+      }
+      #left {
+        padding-top: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #textleft {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+      }
+
+      #inf {
+        margin-top: 60px;
+
+        font-size: 18px;
+      }
+      #inf b {
+        color: black;
+      }
+      #inf span {
+        color: rgb(124, 124, 124);
+      }
+      #right {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 50px;
+        padding-left: 300px;
+      }
+      #signup b {
+        font-size: 30px;
+      }
+      #infos {
+        margin-top: 30px;
+      }
+      #infos li {
+        list-style: none;
+        padding-bottom: 15px;
+      }
+      #infos input {
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border-color: rgb(146, 146, 146);
+        border-style: solid;
+        font-size: 15px;
+      }
+      #infos input[type="text"] {
+        width: 25%;
+      }
+      #infos input[id="emai"] {
+        width: 52.5%;
+      }
+      #infos input[id="pass"] {
+        width: 52.5%;
+      }
+      #birth li {
+        list-style: none;
+        margin-top: 5px;
+      }
+      #genders {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      #genders span {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #terms {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+        margin-top: 5px;
+      }
+      #create {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      #sign:hover {
+        cursor: grab;
+      }
+      #sign {
+        margin-top: 30px;
+        list-style: none;
+      }
+      #sign input[id="sub"] {
+        width: 230px;
+        height: 50px;
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+        border-radius: 7px;
+        border-style: solid;
+        border-color: rgb(114, 114, 114);
+        background-color: rgb(36, 143, 3);
+        color: white;
+      }
+      #birth input[type="date"] {
+        height: 25px;
+      }
+      #birth a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+        font-size: 12px;
+      }
+      #terms a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+      }
+      #terms {
+        font-size: 12px;
+      }
+      #create a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">My Website</a>
+      <nav class="main-nav">
+        
+      </nav>
+      <div class="user-profile">
+        <img src="ME.jpg" alt="User Profile">
+        <span class="username">Escaño, Edwin V. Jr</span>
+      </div>
+    </div>
+  </header>
+  <div class="sidenav">
+    <a href="box.html">Activity 1</a>
+    <a href="facebook.html">Activity 2</a>
+    <a href="Orderlist.html">Activity 3</a>
+    <a href="SuperScript.html">Activity 4</a>
+     <a href="table.html">Activity 5</a>
+      <a href="CCSBuilding.html">Activity 6</a>>
+  </div>
+  <div class="main">
+    
+    <div id="head">
+      <div id="logo">facebook</div>
+      <form action="post">
+        <li>
+          Email or Phone <br /><input type="text" /> <br /><input
+            type="checkbox"
+          />
+          <span> keep me logged in</span>
+        </li>
+        <li>
+          Password <br /><input type="password" /><br /><a href="#"
+            >Forgot password?</a
+          >
+        </li>
+        <li><br /><input type="submit" value="Log In" /></li>
+      </form>
+    </div>
+
+    <div id="forms">
+      <div id="left">
+        <div id="textleft">
+          Connect with friends and the world around you on Facebook.
+        </div>
+        <div id="inf">
+        <b>See photos and updates </b>
+          <span> from friends in News Feed.</span>
+        </div>
+        <div id="inf">
+        <b>Share what's new </b
+          ><span> in your life on your Timeline.</span>
+        </div>
+        <div id="inf">
+        <b>Find more </b>
+          <span> of what you are looking for with Facebook Search.</span>
+        </div>
+      </div>
+      <div id="right">
+        <div id="signup">
+          <b> Sign Up</b> <br />It's free and always will be.
+        </div>
+        <div id="infos">
+          <li>
+            <input type="text" placeholder="First Name" id="Firstname" />
+            <input type="text" placeholder="Last Name" id="surname" />
+          </li>
+          <li>
+            <input id="emai" type="text" placeholder="Mobile number or email" />
+          </li>
+          <li><input id="emai" type="password" placeholder="New Password" /></li>
+          <li>
+            <input id="pass" type="password" placeholder="Re-enter Password" />
+          </li>
+        </div>
+        <div id="birth">
+          <p>Birthday</p>
+          <li>
+            <select >
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+            </select>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select>
+                <option>1905</option>
+                <option>1906</option>
+                <option>1907</option>
+                <option>1908</option>
+                <option>1909</option>
+                <option>1910</option>
+                <option>1911</option>
+                <option>1912</option>
+                <option>1913</option>
+                <option>1914</option>
+                <option>1915</option>
+                <option>1916</option>
+                <option>1917</option>
+                <option>1918</option>
+                <option>1919</option>
+                <option>1920</option>
+                <option>1921</option>
+                <option>1922</option>
+                <option>1923</option>
+                <option>1924</option>
+                <option>1925</option>
+                <option>1926</option>
+                <option>1927</option>
+                <option>1928</option>
+                <option>1929</option>
+                <option>1930</option>
+                <option>1931</option>
+                <option>1932</option>
+                <option>1933</option>
+                <option>1934</option>
+                <option>1935</option>
+                <option>1936</option>
+                <option>1937</option>
+                <option>1938</option>
+                <option>1939</option>
+                <option>1940</option>
+                <option>1941</option>
+                <option>1942</option>
+                <option>1943</option>
+                <option>1944</option>
+                <option>1945</option>
+                <option>1946</option>
+                <option>1947</option>
+                <option>1948</option>
+                <option>1949</option>
+                <option>1950</option>
+                <option>1951</option>
+                <option>1952</option>
+                <option>1953</option>
+                <option>1954</option>
+                <option>1955</option>
+                <option>1956</option>
+                <option>1957</option>
+                <option>1958</option>
+                <option>1959</option>
+                <option>1960</option>
+                <option>1961</option>
+                <option>1962</option>
+                <option>1963</option>
+                <option>1964</option>
+                <option>1965</option>
+                <option>1966</option>
+                <option>1967</option>
+                <option>1968</option>
+                <option>1969</option>
+                <option>1970</option>
+                <option>1971</option>
+                <option>1972</option>
+                <option>1973</option>
+                <option>1974</option>
+                <option>1975</option>
+                <option>1976</option>
+                <option>1977</option>
+                <option>1978</option>
+                <option>1979</option>
+                <option>1980</option>
+                <option>1981</option>
+                <option>1982</option>
+                <option>1983</option>
+                <option>1984</option>
+                <option>1985</option>
+                <option>1986</option>
+                <option>1987</option>
+                <option>1988</option>
+                <option>1989</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </select>
+            <a id="bir" href="">Why do I need to provide my date of birth?</a>
+          </li>
+        </div>
+        <li id="genders">
+          <input type="radio" name="gender" id="" /><span>Male</span>
+          <input type="radio" name="gender" id="" /><span>Female</span>
+        </li>
+        <li id="terms">
+          By clicking Sign up, you agree to our
+          <a href="">Terms, <a href=""> Data Policy </a></a> and <br />
+          <a href="">Cookies Policy.</a> You may receive SMS Notifications from
+          us <br />
+          and can opt out any time
+        </li>
+        <li id="sign">
+          <input id="sub" type="submit" value="Sign Up" />
+        </li>
+        <li id="create">
+          <a href="">Create a Page</a> for a celebrity, band or business.
+        </li>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>
